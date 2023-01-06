@@ -19,7 +19,7 @@ export default Home = () => {
       if(imageList.length > 0) {
         let index=0;
         setInterval(() => {
-         stepCarousel.current.scrollTo({x: index*screenWidth, y:0,animated:true});
+         stepCarousel?.current?.scrollTo({x: index*screenWidth, y:0,animated:true});
          index +=1;
          if(index === imageList.length){
           index=0;

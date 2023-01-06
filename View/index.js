@@ -7,6 +7,7 @@ import Home from './home.js';
 import Setting from './setting';
 import Profile  from "./profile.js";
 import Shop from "./shop.js";
+import Signup from './signup';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -68,6 +69,7 @@ export default Index = () => {
             <Stack.Navigator initialRouteName='Login' screenOptions={{headerShown: false}}>
                 <Stack.Screen name='Login' component={Login}/>
                 <Stack.Screen name='HomeTabs' component={HomeTabs}/>
+                <Stack.Screen name='Signup' component={Signup}/>
             </Stack.Navigator>
         </NavigationContainer>
      
